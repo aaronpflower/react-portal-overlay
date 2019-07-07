@@ -1,0 +1,14 @@
+{
+    "name": "@nui/layer",
+    "version": "0.1.0-alpha.1",
+    "author": "Aaron Flower <aaron.flower@gmail.com>",
+    "main": "src/index",
+    "dependencies": {
+        "lodash": "^4.17.11",
+        "prop-types": "^15.7.2",
+        "react": "^16.8.6"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0"
+    }
+}

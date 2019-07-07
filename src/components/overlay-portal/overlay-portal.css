@@ -1,0 +1,22 @@
+.overlay {
+    /* Width needs to be set for when the content is fixed. */
+    backface-visibility: hidden;
+    width: 100%;
+}
+
+/*
+* iPhones need to allow overflow so they don't clip overscrolling-content.
+* Chrome needs overflow to be hidden, otherwise it will allow scrolling to
+* hidden absolutely-positioned content.
+*/
+:global(.browser-safari) .overlay,
+:global(.device-i-phone) .overlay {
+    overflow: visible !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.contentMarginCollapse {
+    /* prevent child/parent margin-collapse */
+    padding-top: 0.1px;
+    position: relative;
+    width: 100%;
+}
